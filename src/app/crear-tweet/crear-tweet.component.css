@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+.general{
+    width: 100%;
+    height: 100%;
+    background-image: url('C:\BlackPoli\fondo.png');
+    background-size: 100%;
+}
+
+.contenido{
+    width: 87%;
+    height: 80%;
+    padding: 5px;
+    padding: 0 1rem;
+    margin: 1rem; 
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#F2F3F4;
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 40px;
+    color: #EEEEEE ;
+}
+
+.titulo{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.inputUsername{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    position: relative; top: 30px;
+}
+
+.published-date{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.editor{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+
+.guardarPublicacion{
+    text-align: center;
+}

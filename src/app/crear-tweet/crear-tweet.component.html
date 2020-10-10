@@ -1,0 +1,32 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="general">
+    <div class="titulo">
+        <h1>Crea tu publicacion</h1>
+    </div>
+
+    <div class="contenido">
+
+        <div class="inputUsername">
+            <span class="p-float-label">
+                <input id="float-input" type="text" pInputText [(ngModel)]="username"> 
+                <label for="float-input">Username</label>
+            </span>
+        </div>
+        <br>
+
+        <div class="published-date">
+            <label for="icon">Fecha de publicacion:</label>
+            <p-calendar [(ngModel)]="dateCreate" [showIcon]="true" inputId="icon"></p-calendar>
+        </div>
+        <br>
+
+        <div class="editor">
+            <p-editor [(ngModel)]="publicacion" [style]="{'height':'200px'}"></p-editor>
+        </div>
+
+        <div class="guardarPublicacion">
+            <button mat-raised-button color="primary" (click)="crearTweet()">Publicar</button>
+        </div>
+
+    </div>
+</div>
