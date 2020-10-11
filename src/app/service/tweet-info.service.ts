@@ -19,7 +19,7 @@ export class TweetInfoService {
 
   getAllTweet(): Observable <Tweet[]> {
     
-    return this.http.get<Tweet[]>('https://blackpoli.herokuapp.com/post/91');  
+    return this.http.get<Tweet[]>('https://blackpoli.herokuapp.com/post/131');  
     }
 
 

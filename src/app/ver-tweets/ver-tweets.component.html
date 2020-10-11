@@ -1,14 +1,16 @@
-<div class="titulo">
-    <h1>TUS TWEETS</h1>
-</div>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
+
+    <div class="titulo">
+        <h1>TUS TWEETS</h1>
+    </div>
+    
     <div class="button">
         <button style="margin: 1%;" (click)="fillTweet()" mat-raised-button color="primary">Ver Tweets</button>
         <button style="margin: 1%;" [routerLink]="['/crearTweet']" mat-raised-button color="primary">Atras</button>
         
-        <div *ngFor= 'let tweet of tweets'>
-            <app-tweet [tweet]="tweet"></app-tweet>
-        </div>
+            <div *ngFor= 'let tweet of tweets'>
+                <app-tweet [tweet]="tweet"></app-tweet>
+            </div>
     </div>
 </div>
