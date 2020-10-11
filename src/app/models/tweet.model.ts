@@ -1,5 +1,6 @@
 export class Tweet{
-    username: string;
-    dateCreate: Date;
-    publicacion: string; 
+    
+    message: string;
+    published_date: Date;
+    idUser: number; 
 }

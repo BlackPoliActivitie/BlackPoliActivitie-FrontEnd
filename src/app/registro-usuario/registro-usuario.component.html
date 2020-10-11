@@ -10,12 +10,12 @@
 
         <mat-form-field class="example-full-width">
             <mat-label>Ingresa tu nombre de usuario</mat-label>
-            <input matInput placeholder="Ej. Bhelerfor">
+            <input [(ngModel)]="newUser.username" matInput placeholder="Ej. Bhelerfor">
         </mat-form-field>
         <br>
 
         <div class="botones">
-        <button style="margin: 1%;" mat-raised-button color="primary">Registrar</button>
+        <button style="margin: 1%;" (click)='creationUser()' mat-raised-button color="primary">Registrar</button>
         <button style="margin: 1%;" [routerLink]="['/crearTweet']" mat-raised-button color="primary">Crear Tweet</button>
         </div>
     </div>

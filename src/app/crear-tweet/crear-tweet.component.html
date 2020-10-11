@@ -8,7 +8,7 @@
 
         <div class="inputUsername">
             <span class="p-float-label">
-                <input id="float-input" type="text" pInputText [(ngModel)]="username"> 
+                <input id="float-input" type="text" pInputText [(ngModel)]="newTweet.idUser"> 
                 <label for="float-input">Username</label>
             </span>
         </div>
@@ -16,12 +16,12 @@
 
         <div class="published-date">
             <label for="icon">Fecha de publicacion:</label>
-            <p-calendar [(ngModel)]="dateCreate" [showIcon]="true" inputId="icon"></p-calendar>
+            <p-calendar [(ngModel)]="newTweet. published_date" [showIcon]="true" inputId="icon"></p-calendar>
         </div>
         <br>
 
         <div class="editor">
-            <p-editor [(ngModel)]="publicacion" [style]="{'height':'200px'}"></p-editor>
+            <p-editor [(ngModel)]="newTweet.message" [style]="{'height':'200px'}"></p-editor>
         </div>
 
         <div class="guardarPublicacion">

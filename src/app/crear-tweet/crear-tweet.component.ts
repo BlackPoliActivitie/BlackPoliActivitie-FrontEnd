@@ -7,21 +7,21 @@ import { Tweet } from '../models/tweet.model';
   styleUrls: ['./crear-tweet.component.css']
 })
 export class CrearTweetComponent implements OnInit {
-  username: string;
-  dateCreate: Date;
-  publicacion: string;
-  date: Date;
-
+  
+  newTweet: Tweet;
+  
+  constructor () {
+    this.newTweet = new Tweet ();
+  }
+  
   ngOnInit(): void {
   }
 
+
+
   crearTweet(){
-    let newTweet: Tweet={
-      username: this.username,
-      dateCreate: this.dateCreate,
-      publicacion: this.publicacion
-    }
-    console.log(newTweet);
+    
+    console.log(this.newTweet);
   }
 
 }

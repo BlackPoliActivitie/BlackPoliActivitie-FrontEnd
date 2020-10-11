@@ -24,7 +24,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {CalendarModule} from 'primeng/calendar';
 import {EditorModule} from 'primeng/editor';
 import { TweetComponent } from './tweet/tweet.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,7 +50,8 @@ import { TweetComponent } from './tweet/tweet.component';
     InputTextModule,
     CalendarModule,
     EditorModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
