@@ -1,0 +1,12 @@
+
+.titulo{
+    padding-top: 10px;
+    text-align: center;
+}
+
+h1{
+    font-family: fantasy;
+    font-size: 40px;
+    color: #EEEEEE ;
+    background-color:aquamarine;
+}

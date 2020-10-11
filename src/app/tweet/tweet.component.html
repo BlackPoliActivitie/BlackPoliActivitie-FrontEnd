@@ -1,23 +1,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="general">
-
-    <div class="titulo">
-        <h1>TUS TWEETS</h1>
-    </div>
-
     <div class="diseñoTweet">
         <mat-card class="example-card">
             <mat-card-header>
               <div mat-card-avatar class="example-header-image"></div>
-              <mat-card-title>Shiba Inu</mat-card-title>
-              <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+              <mat-card-title>Tweet:</mat-card-title>
+              <mat-card-subtitle>{{tweet.published_date}}</mat-card-subtitle>
             </mat-card-header>
             <mat-card-content>
-              <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-                A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-                bred for hunting.
-              </p>
+              <div [innerHtml]="tweet.message"></div>
             </mat-card-content>
             <mat-card-actions>
               <button mat-button>LIKE</button>
