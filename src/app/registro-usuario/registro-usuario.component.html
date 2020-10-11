@@ -14,7 +14,9 @@
         </mat-form-field>
         <br>
 
-        <button mat-raised-button color="primary">¡Ingresa!</button>
-
+        <div class="botones">
+        <button style="margin: 1%;" mat-raised-button color="primary">Registrar</button>
+        <button style="margin: 1%;" [routerLink]="['/crearTweet']" mat-raised-button color="primary">Crear Tweet</button>
+        </div>
     </div>
 </div>
